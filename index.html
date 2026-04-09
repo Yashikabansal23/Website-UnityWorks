@@ -8,6 +8,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     </head>
+    
     <body>
         <section class="header">
             <nav>
@@ -22,15 +23,16 @@
                     </ul>
                       
                 </div>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
             </nav>
             <div class = "text">
                 <h1>Empowering Communities, Inspiring Change</h1>
                 <p>Welcome to UnityWorks!<br> We are a dedicated team committed to making a positive impact in our community. Our goal is to create solutions that address critical issues, improve lives, and empower those in need. Join us in our journey to create a better world.</p>
-                <a href = "" class = "button">Learn More</a>
+                <a href = "#programs" class = "button" id="learn-more-btn">Learn More</a>
             </div>
         
         </section>
-        <section class = "Course">
+        <section class = "Course fade-in" id="programs">
             <h1>Our Programs</h1>
             <div class="row">
                 <div class="program">
@@ -55,7 +57,7 @@
             </div>
 
         </section>
-        <section class = "resources">
+        <section class = "resources fade-in">
             <h1>Our Resources</h1>
             <div class="row">
                 <div class="resource-col">
@@ -73,27 +75,39 @@
             </div>
 
         </section>
-        <section class="testimonials">
-            <h1>What Our Members Say</h1>
-            <div class="row">
-                <div class="testimonials-col">
-                    <p>Joining UnityWorks has been one of the most fulfilling experiences. 
-                        Working together for a common cause has helped me grow and given me a sense of purpose</p>
-                    <h3>Priya,Volunteer</h3>    
-                </div>
-                <div class="testimonials-col">
-                    <p>UnityWorks helped me and my family through difficult times.
-                        Thanks to the support programs, I now have skills to secure a stable income.</p>
-                    <h3>Rahul, Program Participant</h3>    
-                </div>
-                <div class="testimonials-col">
-                    <p>Being a part of UnityWorks taught me how powerful a united community can be.
-                        Every small action counts, and I'm proud to be making a difference.</p>
-                    <h3>Aditi, Volunteer Coordinator</h3>    
-                </div>
+        <section class="testimonials fade-in">
+    <h1>What Our Members Say</h1>
+    
+    <div class="testimonial-wrapper">
+
+        <!-- LEFT ARROW BUTTON -->
+        <button class="slider-btn" id="prev-btn">&#8592;</button>
+
+        <div class="row" id="testimonial-row">
+            <div class="testimonials-col">
+                <p>Joining UnityWorks has been one of the most fulfilling experiences. 
+                    Working together for a common cause has helped me grow and given me a sense of purpose</p>
+                <h3>Priya, Volunteer</h3>    
             </div>
-        </section>
-        <section class ="cta">
+            <div class="testimonials-col">
+                <p>UnityWorks helped me and my family through difficult times.
+                    Thanks to the support programs, I now have skills to secure a stable income.</p>
+                <h3>Rahul, Program Participant</h3>    
+            </div>
+            <div class="testimonials-col">
+                <p>Being a part of UnityWorks taught me how powerful a united community can be.
+                    Every small action counts, and I'm proud to be making a difference.</p>
+                <h3>Aditi, Volunteer Coordinator</h3>    
+            </div>
+        </div>
+
+        <!-- RIGHT ARROW BUTTON -->
+        <button class="slider-btn" id="next-btn">&#8594;</button>
+
+    </div>
+</section>
+
+        <section class ="cta fade-in">
             <h1>Support Our Current Projects -<br> Wherever You are</h1>
             <a href = "" class = "button">CONTACT US</a>
         </section>
@@ -108,5 +122,9 @@
             </div>
             <p>Made by <i class="fa-regular fa-heart"></i>Yashika Bansal</p>
         </section>
+
+        <button id="back-to-top">&#8679;</button>
+
+        <script src="script.js"></script>
     </body>
 </html>
